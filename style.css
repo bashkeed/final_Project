@@ -1,0 +1,90 @@
+
+
+body{
+     font-family: 'Open Sans', sans-serif;
+     background: #2c3e50;
+}
+
+nav{
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 4px 0 rgba(245, 40, 145, 0.8);
+    margin: 0 auto;
+}
+
+
+
+nav a{
+
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .animation{
+    height: 5px;
+    position: absolute; 
+    top: 0;
+    background: #1abc9c;
+    z-index: 0;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+
+
+a:nth-child(1){
+    width: 100px;
+}
+
+nav .start-Home, a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+}
+
+
+a:nth-child(2){
+    width: 110px;
+}
+
+nav .start-News, a:nth-child(2):hover~.animation{
+    width: 100px;
+    left: 100px;
+}
+
+a:nth-child(3){
+    width: 100px;
+}
+
+nav .start-Teams, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 210px;
+}
+
+a:nth-child(4){
+    width: 160px;
+}
+
+nav .start-Fixtures, a:nth-child(4):hover~.animation{
+    width: 100px;
+    left: 340px;
+}
+
+a:nth-child(5){
+    width: 120px;
+}
+
+nav .start-Contact, a:nth-child(5):hover~.animation{
+    width: 120px;
+    left: 470px;
+}
