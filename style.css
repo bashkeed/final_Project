@@ -1,8 +1,13 @@
 
 
+
 body{
      font-family: 'Open Sans', sans-serif;
      background: #2c3e50;
+}
+
+th{
+    color: #2b1313;
 }
 
 nav{
@@ -14,6 +19,26 @@ nav{
     font-size: 0;
     box-shadow: 0 2px 4px 0 rgba(245, 40, 145, 0.8);
     margin: 0 auto;
+}
+
+
+
+div{
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.c-item{
+    height: 570px;
+    
+
+}
+
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 
@@ -59,7 +84,7 @@ a:nth-child(2){
 
 nav .start-News, a:nth-child(2):hover~.animation{
     width: 100px;
-    left: 100px;
+    left: 110px;
 }
 
 a:nth-child(3){
