@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+     nav .animation{
+        right: 0;
+     }
+
+        
+       
+    </style>
+</head>
+<body onload="info(teams);">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="">News</a>
+        <a href="">Teams</a>
+        <a href="fixtures.html">Fixtures</a>
+        <a id="change" href="table.html">Table</a>
+        <div class="animation start-home"></div>
+      </nav>
+        
+      <div class="mt-5">
+        <table class="table table-striped">
+          <tr class="bg-info">
+            <th class="bg-info text-light">#</th>
+            <th class="bg-info text-light">Team</th>
+            <th class="bg-info text-light">Pl</th>
+            <th class="bg-info text-light">GD</th>
+            <th class="bg-info text-light">Pts</th>
+
+          </tr>
+    
+          <tbody id="standing">
+    
+          </tbody>
+    
+    
+        </table>
+      </div>
+
+      <script src="main.js">
+        info(teams);
+      </script>
+</body>
+</html>

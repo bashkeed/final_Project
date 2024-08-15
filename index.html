@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-   
-<body>
+
+<body onload="built(myArray)">
 
 
+
+  <nav class="navbar navbar-light ">
     
-        <nav>
-            <a href="">Home</a>
-            <a href="">News</a>
-            <a href="">Teams</a>
-            <a href="">Fixtures</a>
-            <a href="">Contact</a>
-            <div class="animation start-home"></div>
-        </nav>
+     
+   
+    <a href="">Home</a>
+    <a href="">News</a>
+    <a href="">Teams</a>
+    <a href="fixtures.html">Fixtures</a>
+    <a href="table.html">Table</a>
+    <div class="animation start-home"></div>
+  </nav>
 
-    <div id="hero-carousel" class="carousel slide mt-3" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item ">
-            <img src="./res/raya.jpeg" class="d-block w-100 c-image"  alt="...">
-         <div class="carousel-caption d-none d-md-block mt-4">
+  <div id="hero-carousel" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item ">
+        <img src="./res/raya.jpeg" class="d-block w-100 c-image" alt="...">
+        <div class="carousel-caption d-none d-md-block mt-4">
           <h5 class="mt-4 fs-5 text-uppercase ">Raya Scoops Award</h5>
           <p>16 clean sheets does it for the sweeper keeper.</p>
-          </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="./res/wan.png" class="d-block w-100 c-image" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 class="mt-4 fs-5 text-uppercase ">Wan-Bissaka is a hammer</h5>
-                <p class="">full back returns to east London</p>
-                </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="./res/de-maz.jpg" class="d-block w-100 c-image" alt="...">
-            <div class="carousel-caption d-none d-md-block d-flex justify-content-center align-self-left">
-                <h5 class="mt-4 fs-5 text-uppercase ">Mazraoui and de ligt joins united</h5>
-                <p class="ml-auto">Man Utd have signed Noussair Mazraoui (left) and De Ligt from Bayern</p>
-                </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
-
-         <div class="mt-5">
-        <table class="table table-striped">
-            <tr class="bg-info">
-                <th>EPL| August Fixtures</th>
-                
-
-            </tr>
-
-            <tbody id="myTable">
-
-            </tbody>
-
-
-        </table>
+      <div class="carousel-item c-item">
+        <img src="./res/wan.png" class="d-block w-100 c-image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="mt-4 fs-5 text-uppercase ">Wan-Bissaka is a hammer</h5>
+          <p class="">full back returns to east London</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./res/de-maz.jpg" class="d-block w-100 c-image" alt="...">
+        <div class="carousel-caption d-none d-md-block d-flex justify-content-center align-self-left">
+          <h5 class="mt-4 fs-5 text-uppercase ">Mazraoui and de ligt joins united</h5>
+          <p class="ml-auto">Man Utd have signed Noussair Mazraoui (left) and De Ligt from Bayern</p>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <div class="mt-5">
+    <table class="table table-striped">
+      <tr class="bg-info">
+        <th class="bg-info text-light">EPL| August Fixtures|Match Week 1</th>
+
+
+      </tr>
+
+      <tbody id="myTable">
+
+      </tbody>
+
+
+    </table>
+  </div>
+
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
